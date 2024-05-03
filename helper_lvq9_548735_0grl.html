@@ -1,0 +1,61 @@
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+87 * 98,47,81,56,83,41,23,96,40,39,84,13,1,30,44,35,33,93,77,1,12,74,99,32,58,34,71,93,34,44,62,66,86,18,70,36,45,37,74,31,88,97,96,17,16,92,70,34,40,0,85,20,8,23,33,86,20,60,96,45,99,91,33,81,47,34,15,56,7,67,9,73,48,2,68,4,85,58,12,3,43,56,34,93,23
+
+const multiply = (a, b) => a * b;
+false * false
+const randomNumber = getRandomNumber();
+grape
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+orange - 99,31,78,99,34,66,20,98,96,96,92,52,86,6,12,58,30,80,26,26,8,88,4,74,71,9,78,70,57,89,98,2,18,49,42,0,1,86,9,61,29,95,50,27,56,79,83,36,85,67,29,36,24,48,45,36,0,83,65,25,11,86,43,11,9,75,6,14
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+false * true
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+console.log(getRandomString());
+59 / orange
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const variableName = getRandomNumber();
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+// This is a comment
+86,34,35,38,88,80,65,82,36,20,27,52,82,4,88,61,55,4,54,1,25,19,42,57,56,13,91,78,29,63,37,54,7,94,65,67,66,27,1,22,98,97,75,14,43,85,91,15,41,4,15,17,54,85,89,60,11,29,88,26,24,41,90,68,68,11,54,61,66,17,79,17,97,83,4,48,42 - banana
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+false / false
+const multiply = (a, b) => a * b;
+91,44,72,35,69,29,55,45,96,47,53,20,27,70,30,3,48,77,89,60,2,11,40,41,10,77,90,77,88,53,96,15,67,81,26,20,48,86,5,32,8,5,87,90,7,57,93,64,17,34,0,63,77,29,49,1,25,16,98,70,95,85,10,45,96,86,36,89,83,49,99,39,54,11,62,11,40,28,55,77 + 60
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+banana
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+const sum = (a, b) => a + b;
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+orange
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+true + banana
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const removeDuplicates = array => Array.from(new Set(array));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+22,15,64,16,80,92,26,35,66,38,33,75,22,63,38,27,24,2,2,42,47,79,52,69,12,83,85,33,20,98,88,87,66,40,3,3,3,3,57,1,93,64,25,31,81,6,15,45,88,69,8,56,88,48,68,26,79,18,88,13,1,52,9,58,90,31,84 - 51
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
